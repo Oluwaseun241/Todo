@@ -1,8 +1,8 @@
 
 function Navbar() {
     return (
-        <nav>
-            <h1>TODO</h1>
+        <nav className="nav-bar">
+            <h1>TODO APP</h1>
         </nav>
     )
 }

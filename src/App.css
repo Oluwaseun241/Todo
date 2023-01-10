@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8ded9;
+}
+
+* {
+    font-family: Mulish, sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 135px auto;
+
+}
+
+.nav-bar h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 40px;
+    color: #ee5a3f;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #ee5a3f;
+    margin-bottom: 30px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+    background: #fff1ee;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    background: rgb(10, 11, 21);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.task-list .tasks {
+    padding: 10px;
+    background: #ee5a3f;
+    border-radius: 5px 5px 0 0;
+}
+
+.task-list .tasks .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasks .task {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+}
+
+.tasks .task:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.task label input {
+    margin-right: 12px;
+}
+
+.task label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.task input[type="checkbox"] {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+}
+
+label .custom-checkbox::before {
+    display: block;
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: .30em;
+    margin-right: .75em;
+    border: 1px solid currentColor;
+} 
+
+label .custom-checkbox:hover::before,
+label input[type="checkbox"]:hover + .custom-checkbox::before {
+    background: #03e9f4;
+}
+
+label input[type="checkbox"]:checked + .custom-checkbox::before {
+    content: url(check.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(10, 11, 21);
+}
+
+.action .edit {
+    color: #03e9f4;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #ee5a3f;
+}
+
+.action .edit:hover {
+    color: rgb(10, 11, 21);
+}
+
+.more-opt {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 50px;
+    color: #ee5a3f;
+    border: 2px solid #ee5a3f;
+    border-radius: 0 0 5px 5px;
+}
+
+.more-opt .clear:hover {
+    color: rgb(10, 11, 21);
+}
+
+.clear {
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+a:visited {
+    color: rgb(10, 11, 21);
+}
+
+a:hover {
+    color: #ee5a3f;
+}

@@ -1,5 +1,17 @@
+import React from 'react-dom/client';
+
 function Form () {
-    return(
+    
+    const api = "http://127.0.0.1:8000/api/tasks/"
+
+    fetch(api)
+    .then(response => {
+        return response.json();
+    })
+    .then(data =>{
+        console.log(data);
+    })
+    return (
         <div className='form'>
             <form>
                 <input type='text' placeholder='Create a new todo...' />
